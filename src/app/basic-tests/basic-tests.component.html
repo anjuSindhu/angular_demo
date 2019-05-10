@@ -1,0 +1,22 @@
+<div style="text-align:center">
+  <button (click)= 'onShowHideClick($event)' type="button" name="ShowHide Button">Show Hide Welcome message</button>
+  <h1 *ngIf="(count % 2 == 0)" appHighlightDirectiv defaultClr="#ffcc66">
+    Welcome to {{ title |  uppercase}}
+  </h1>
+  <div *ngFor="let hero of heroes">
+    Name: {{hero.name}}  Telephone number : {{hero.tel}}
+  </div>
+  <button (click)="testRestAPIGet()"> Test Rest APis</button>
+  <div>
+    <li *ngFor="let person of personInfo"> Name: {{person.first_name}}  Photo: <img src="{{person.avatar}}"></li>
+  </div>
+
+
+  <div>
+    <button (click)="testRestAPIPost()"> Post Rest APis</button>
+  </div>
+</div>
+
+
+
+

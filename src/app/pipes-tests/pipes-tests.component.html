@@ -1,0 +1,13 @@
+
+<div style="text-align:center">
+  <div>
+    <p> My Bithday is on {{birthday | date:format }}</p>
+    <button (click)="toggleDateFormat()"> Toggle Date Format</button>
+  </div>
+  <br/>
+  <br/>
+  <div> 
+    <!--Test our custome Pipe : {{ abc | simple: 20:30:'total = '}}-->
+    Test our custome Pipe : {{ "Multiplication of " | simple: 20:30:' in total'}}
+  </div>
+</div> 
