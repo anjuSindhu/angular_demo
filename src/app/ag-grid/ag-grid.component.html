@@ -1,8 +1,10 @@
-<button (click)='getSelectedRows()'>Get Selected rows</button>
-
+<div class="row">
+    <button style="margin:auto;" (click)='getSelectedRows()'>Get Selected rows</button>
+</div>
+<div class="row">
 <ag-grid-angular 
     #agGrid
-    style="width: 500px; height: 500px; margin: 2rem 5rem;" 
+    style="width: 500px; height: 500px; margin: 2rem auto;" 
     class="ag-theme-balham"
     [autoGroupColumnDef]="autoGroupColumnDef"
     [enableSorting]="true"
@@ -12,3 +14,4 @@
     [columnDefs]="columnDefs"
     rowSelection="multiple">
 </ag-grid-angular>
+</div>
