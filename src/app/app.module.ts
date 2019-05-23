@@ -20,7 +20,7 @@ import 'ag-grid-community';
 import { jqxBarGaugeModule } from 'jqwidgets-ng/jqxbargauge';
 import { jqxPivotGridModule  } from 'jqwidgets-ng/jqxpivotgrid';
 import { jqxPivotDesignerModule } from 'jqwidgets-ng/jqxpivotdesigner';
-import { jqxKanbanComponent } from 'jqwidgets-ng/jqxkanban';
+import { jqxKanbanModule } from 'jqwidgets-ng/jqxkanban';
 import { JqxPivotgridComponent } from './jqx-pivotgrid/jqx-pivotgrid.component';
 import { JqxBarguageComponent } from './jqx-barguage/jqx-barguage.component';
 import { KanbanComponent } from './kanban/kanban.component';
@@ -38,7 +38,6 @@ import { KanbanComponent } from './kanban/kanban.component';
     FilterPipe,
     JqxPivotgridComponent,
     JqxBarguageComponent,
-    jqxKanbanComponent,
     KanbanComponent
   ],
   imports: [
@@ -48,6 +47,7 @@ import { KanbanComponent } from './kanban/kanban.component';
     jqxBarGaugeModule,
     jqxPivotGridModule,
     jqxPivotDesignerModule,
+    jqxKanbanModule,
     AgGridModule.withComponents(null),
     AlertModule.forRoot(),
   ],
