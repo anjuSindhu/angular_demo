@@ -6,6 +6,9 @@ import { EventBindingTestsComponent } from './event-binding-tests/event-binding-
 import { AgGridComponent } from './ag-grid/ag-grid.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ImageDetailComponent} from './image-detail/image-detail.component';
+import {JqxPivotgridComponent} from './jqx-pivotgrid/jqx-pivotgrid.component';
+import {JqxBarguageComponent} from './jqx-barguage/jqx-barguage.component';
+import { KanbanComponent } from './kanban/kanban.component';
 
 const routes: Routes = [
   { path: 'basicTest', component: BasicTestsComponent },
@@ -13,7 +16,10 @@ const routes: Routes = [
   { path: 'eventBindingTest', component: EventBindingTestsComponent },
   { path: 'agGrid', component: AgGridComponent },
   { path: 'gallery', component: GalleryComponent },
-  { path: 'image/:id', component: ImageDetailComponent}
+  { path: 'image/:id', component: ImageDetailComponent},
+  { path: 'jqxpivotgrid', component: JqxPivotgridComponent},
+  { path: 'jqxbarguage', component: JqxBarguageComponent},
+  { path: 'kanban', component: KanbanComponent}
 ];
 
 @NgModule({

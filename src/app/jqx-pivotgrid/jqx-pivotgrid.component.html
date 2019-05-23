@@ -1,0 +1,25 @@
+<div class="row" style="justify-content: center;">
+<table>
+  <tr>
+      <td>
+      <jqxPivotDesigner
+          [type]="pivotGrid"
+          [width]="250" 
+          [height]="500">
+      </jqxPivotDesigner>
+      </td>
+      <td>
+      <jqxPivotGrid
+          [width]="1000" 
+          [height]="500"
+          [source]="pivotDataSource"
+          [treeStyleRows] = "false"
+          [autoResize] = "false"
+          [multipleSelectionEnabled] = "true"
+          [localization]="localization"
+          >
+      </jqxPivotGrid>
+   </td>
+  </tr>
+</table>
+</div>
